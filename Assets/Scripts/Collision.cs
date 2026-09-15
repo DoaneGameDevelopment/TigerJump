@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
-    public void onCollisionEnter(Collision collision)
+    public void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player")
         {
