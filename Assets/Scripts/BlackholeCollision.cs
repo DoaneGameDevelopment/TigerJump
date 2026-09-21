@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class Collision : MonoBehaviour
+public class BlackholeCollision : MonoBehaviour
 {
-    public void onCollisionEnter(Collision collision)
+    public void onCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
