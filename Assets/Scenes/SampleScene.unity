@@ -269,7 +269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b35d33dd064242c40b6738b31e12794b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCamera
-  player: {fileID: 0}
+  player: {fileID: 930933208}
   speed: 0.12
   lower_y_limit: -3
 --- !u!1 &619394800
@@ -453,6 +453,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!4 &930933208 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3870748326076863346, guid: c589ff4470e5857469bad0859c60d61a, type: 3}
+  m_PrefabInstance: {fileID: 1285580595}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1285580595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -467,7 +472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3870748326076863346, guid: c589ff4470e5857469bad0859c60d61a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.14365721
+      value: 1.07
       objectReference: {fileID: 0}
     - target: {fileID: 3870748326076863346, guid: c589ff4470e5857469bad0859c60d61a, type: 3}
       propertyPath: m_LocalPosition.z
