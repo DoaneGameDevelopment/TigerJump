@@ -52,5 +52,14 @@ public class PlayerMovement : MonoBehaviour
         float Move = moveAction.ReadValue<Vector2>().x;
 
         rigidBody.linearVelocity = new Vector2(Move * horizSpeed, rigidBody.linearVelocity.y);
+
+        if (player.transform.position.x < -9.1)
+        {
+            player.transform.position = new Vector3(9.0f, player.transform.position.y, player.transform.position.z);
+        }
+        if (player.transform.position.x > 9.1)
+        {
+            player.transform.position = new Vector3(-9.0f, player.transform.position.y, player.transform.position.z);
+        }
     }
 }
