@@ -15,7 +15,7 @@ public class TitleScreenManager : MonoBehaviour
 
     public void Options()
     {
-        Debug.Log("Options");
+        SceneManager.LoadScene("OptionsScene");
     }
 
     public void ExitGame()
