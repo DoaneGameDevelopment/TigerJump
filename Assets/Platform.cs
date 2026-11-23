@@ -9,7 +9,7 @@ public class Platform : MonoBehaviour
 
     private Vector3 startPos;
     private Vector3 topPos;
-    private bool movingUp = true;
+    private bool movingUp = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

@@ -53,4 +53,14 @@ public class PlayerMovement : MonoBehaviour
 
         rigidBody.linearVelocity = new Vector2(Move * horizSpeed, rigidBody.linearVelocity.y);
     }
+
+    // maybe this will work or something idk
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            GetComponent<Rigidbody2D>().linearVelocity =
+                new Vector2(GetComponent<Rigidbody2D>().linearVelocity.x, 10f);
+        }
+    }
 }
